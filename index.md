@@ -8,16 +8,16 @@
 ### Interface
 
 UnityMol is currently based on one window menu with retractable sub-menus:
-<img src="images/81bc4934b2d5dcf9adf3a83b689ccdd7_image.png" width="200"/>
+<img src="docs/images/81bc4934b2d5dcf9adf3a83b689ccdd7_image.png" width="200"/>
 
 The top right button with an arrow hides the whole menu.
 
 #### Loaded molecule buttons
 
 When loading a molecule, several selections and representations will be created by default (showDefaultRep flag of the load and fetch API functions):
-<img src="images/5fb9bb009139de78cea290acdbab1812_image.png" width="200"/>
+<img src="docs/images/5fb9bb009139de78cea290acdbab1812_image.png" width="200"/>
 
-Each loaded molecule will have this line : <img src="images/e39b45cf9d9a6448cbd6e29c3ce8cd48_image.png" width="300"/>
+Each loaded molecule will have this line : <img src="docs/images/e39b45cf9d9a6448cbd6e29c3ce8cd48_image.png" width="300"/>
 
 Use the left arrow to hide all the selection buttons of this molecule.
 
@@ -28,7 +28,7 @@ Use the left arrow to hide all the selection buttons of this molecule.
 
 #### Selection / Representation buttons
 
-![image](/images/5d79856f57e1ba6040eaba4394f069ef_image.png)
+![image](/docs/images/5d79856f57e1ba6040eaba4394f069ef_image.png)
 
 The selection button can be unfolded to show two input fields :
 
@@ -48,7 +48,7 @@ Note that if you modify the selection, you have to click on the eye button to up
 
 By clicking on the selection label, the menu unfolds and you can tweak the different parameters of the representation :
 
- <img src="images/0218557cc8c42fb49ba509f5c9d3b40e_image.png" width="300"/>
+ <img src="docs/images/0218557cc8c42fb49ba509f5c9d3b40e_image.png" width="300"/>
 
 -----------
 
@@ -80,15 +80,15 @@ print(s)
 ```
 
 You can also use the PDBID input field of the menu in the Input sub-menu: 
- <img src="images/4c7c1a0f177c33c5e6f28c4758e9ea66_image.png" width="150"/>
+ <img src="docs/images/4c7c1a0f177c33c5e6f28c4758e9ea66_image.png" width="150"/>
 
 This should show you something close to this:
- <img src="images/93b10f1e85dc5247599342080b42f5c9_image.png" width="350"/>
+ <img src="docs/images/93b10f1e85dc5247599342080b42f5c9_image.png" width="350"/>
 
 #### Coloring
 
 Now let's change the color of the cartoon representation created on the "1bl8_protein_or_nucleic" selection by clicking on the cartoon line to expand the options and clicking on "By chain" button:
-<img src="images/a9579ba703babc4995e62899b0b49af6_image.png" width="250"/>
+<img src="docs/images/a9579ba703babc4995e62899b0b49af6_image.png" width="250"/>
 
 This is equivalent to do ```colorByChain("1bl8_protein_or_nucleic", "c")``` in the console.
 
@@ -113,7 +113,7 @@ The format is: ```AtomName #HexadecimalColor radius```. For example: ```H #fffff
 #### Adding representations to selections
 
 We can add a "all-atoms" representation by adding the "Hyperball" representation: click on the (+) button of the "1bl8_protein_or_nucleic" selection button and click on "Hyperball" in the dropdown menu: 
-<img src="images/460a6ab642c99ca5b60f6138be50b010_image.png" width="250"/>
+<img src="docs/images/460a6ab642c99ca5b60f6138be50b010_image.png" width="250"/>
 
 This is equivalent to do ```showSelection("1bl8_protein_or_nucleic", "hb")``` in the console.
 
@@ -133,7 +133,7 @@ You can also hide representations in all the selections based on the representat
 Let's add hydrogens to this molecule with the Reduce method by clicking on the "H" button next to the name of our protein.
 This is equivalent to do ```addHydrogensReduce("1bl8")``` or if you don't know the name of the molecule you can use the 's' variable storing the UnityMolStructure when we loaded the molecule :```addHydrogensReduce(s.name)```. We can also use the last loaded molecule by doing: ```addHydrogensReduce(last().name)```.
 
-This should update the representations to this: <img src="images/7e22ad9c80ded147c56680f1c3b4572f_image.png" width="350"/>
+This should update the representations to this: <img src="docs/images/7e22ad9c80ded147c56680f1c3b4572f_image.png" width="350"/>
 
 Note that the number of atoms in some selections has changed.
 
@@ -153,8 +153,8 @@ If several molecules are loaded, you can only rotate one molecule by clicking on
 
 Let's select only a part of the molecule and display it as a transparent surface. There are several ways to create selections: 
 
-- duplicate one by clicking on the copy/paste button ![image](images/4a06b32b8dd9c76406627cab89d93664_image.png) + edit the content of the by clicking on the left arrow to expand the selection options and enter ```1bl8 and chain A``` in the selection query part.
-- click on the "New selection" button in the "Utils" menu + edit the content of the selection by clicking on the left arrow to expand the selection options and enter ```1bl8 and chain A``` in the selection query part.<img src="images/87e989d2eace4a59b4cabdd645b06dce_image.png" width="200"/>
+- duplicate one by clicking on the copy/paste button ![image](docs/images/4a06b32b8dd9c76406627cab89d93664_image.png) + edit the content of the by clicking on the left arrow to expand the selection options and enter ```1bl8 and chain A``` in the selection query part.
+- click on the "New selection" button in the "Utils" menu + edit the content of the selection by clicking on the left arrow to expand the selection options and enter ```1bl8 and chain A``` in the selection query part.<img src="docs/images/87e989d2eace4a59b4cabdd645b06dce_image.png" width="200"/>
 - use the console to directly create the selection by doing ```select("1bl8 and chain A", "chainA")```
 
 Now let's show the newly created selection as a surface. Click on the (+) button and select Surface (MSMS) or enter ```showSelection("chainA", "s", SurfMethod.MSMS)```.
@@ -165,7 +165,7 @@ Let's color the surface in red: ```colorSelection("chainA", "s", Color.red)``` o
 
 Hide the cartoon representation with ```hideSelection("1bl8_protein_or_nucleic", "c")``` and change the background color with ```bg_color(Color.black)``` or ```bg_color("black")``` or ```bg_color(Color(0,0,0,1))```
 
-You should have something close to this: <img src="images/ef7996d79e2d9c47fde3c8de401d53e5_image.png" width="350"/>
+You should have something close to this: <img src="docs/images/ef7996d79e2d9c47fde3c8de401d53e5_image.png" width="350"/>
 
 For a better overview of all the possibilities of the selection language please see [here](MDAnalysis selection language) and [here](https://userguide.mdanalysis.org/1.0.0/selections.html).
 
@@ -220,7 +220,7 @@ To load a trajectory, press the "Load" button from the Input menu and set the fi
 By default, UnityMol loads the trajectory on the last loaded molecule when using the "Load" button.
 
 This sub-menu should be displayed under the loaded molecule UI row:
-<img src="images/d8008bc99169db2685aba6fbe10fa1a7_image.png" width="350"/>
+<img src="docs/images/d8008bc99169db2685aba6fbe10fa1a7_image.png" width="350"/>
 
 A similar menu is displayed when a molecule with several models is loaded.
 There are two ways to load a molecular file with several models. By default, UnityMol parses a PDB/mmCIF/GRO file with ```modelsAsTraj = True``` meaning that the first model is read and only the new positions of the next frames are stored.
@@ -239,7 +239,7 @@ Note that smoothing and averaging should be fast because it's done using C# Burs
 ### Effects (desktop)
 Currently, UnityMol has 3 effects you can activate in desktop mode:
 
-- Depth cueing / Fog : <img src="images/6a67c18a3a1395360ba9f5cfdb9deb6b_image.png" width="350"/>
+- Depth cueing / Fog : <img src="docs/images/6a67c18a3a1395360ba9f5cfdb9deb6b_image.png" width="350"/>
 Related functions are 
 ```python
 enableDepthCueing()
@@ -248,7 +248,7 @@ setDepthCueingStart(0.5)
 setDepthCueingDensity(0.1)
 ```
 
-- Depth of field / Bokeh effect: <img src="images/12e17fffadf4d33efb8306d33e37d586_image.png" width="350"/>
+- Depth of field / Bokeh effect: <img src="docs/images/12e17fffadf4d33efb8306d33e37d586_image.png" width="350"/>
 Related functions are 
 ```python
 enableDOF()
@@ -259,7 +259,7 @@ setDOFFocusDistance(0.1)
 ```
 
 **Note: when the DOF effect is activated, clicking on a molecule does not trigger the selection but changes the DOF focus distance.**
-- Outline :  <img src="images/2a14a6cbbb8033e32d256c4e56c573e6_image.png" width="350"/>
+- Outline :  <img src="docs/images/2a14a6cbbb8033e32d256c4e56c573e6_image.png" width="350"/>
 Related functions are
 ```python
 enableOutline()
@@ -283,11 +283,11 @@ colorSelection(s1.ToSelectionName(), "c", Color.red)
 colorSelection(s2.ToSelectionName(), "c", Color.blue)
 ```
 
-You should have something like this: <img src="images/aca46e8cd2e71510a146c15e0e5c9cea_image.png" width="350"/>
+You should have something like this: <img src="docs/images/aca46e8cd2e71510a146c15e0e5c9cea_image.png" width="350"/>
 
 Clicking on "Run CEAlign" from the Utils menu applies CEAlign on the 2 lastly loaded molecules. This is equivalent to ```cealign(s1.ToSelectionName(), s2.ToSelectionName())```.
 
-<img src="images/4ca710452d62d8fed656be32bb6258ea_image.png" width="350"/>
+<img src="docs/images/4ca710452d62d8fed656be32bb6258ea_image.png" width="350"/>
 
 -----------
 
@@ -295,7 +295,7 @@ Clicking on "Run CEAlign" from the Utils menu applies CEAlign on the 2 lastly lo
 
 You can show the bounding box of the loaded molecule by doing ```showBoundingBox("structureName")``` / ```hideBoundingBox("structureName")```.
 
-<img src="images/3e98d7858acb7708025891d0630d3954_image.png" width="350"/>
+<img src="docs/images/3e98d7858acb7708025891d0630d3954_image.png" width="350"/>
 
 
 -----------
