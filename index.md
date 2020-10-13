@@ -56,7 +56,7 @@ Here is a list of representations available in UnityMol:
 - "dxiso": iso-surface (based on opendx maps)
 - "sphere": sphere (mesh based, slower than hyperball)
 - "l": lines (higher quality when number of atoms is < 10000)
-- "hbond": hydrogen-bonds (animated dotted line computed based on shrodinger distance/angle thresholds: distance(H-Acceptor) = 2.8A | angle(Don-H-Acc) = 120 | angle(H-Acc-B) = 90)
+- "hbond": hydrogen-bonds (animated dotted line computed based on shrodinger distance/angle thresholds: distance(H-Acceptor) = 2.8A  /  angle(Don-H-Acc) = 120  /  angle(H-Acc-B) = 90)
 - "hbondtubes": hydrogen-bonds tubes (still tube meshes between atoms, same as hbonds)
 - "fl": fieldlines (based on opendx maps and its gradient)
 - "trace": trace (alpha carbon trace)
