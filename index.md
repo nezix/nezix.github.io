@@ -1,6 +1,6 @@
 # Practical UnityMol tutorial
 
-## UnityMol 1.1.1 (Executables [here](https://sourceforge.net/projects/unitymol/))
+## UnityMol 1.1.1 (Executables [here](https://sourceforge.net/projects/unitymol/files))
 
 
 -----------
