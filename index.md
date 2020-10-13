@@ -49,6 +49,24 @@ By clicking on the selection label, the menu unfolds and you can tweak the diffe
 
  <img src="https://github.com/nezix/nezix.github.io/raw/main/images/0218557cc8c42fb49ba509f5c9d3b40e_image.png" width="300"/>
 
+Here is a list of representations available in UnityMol:
+
+- 'hb': hyperball (licorice/balls&sticks/VDW/smooth)
+- "bondorder": bondorder (based on hyperball and uses bond order information to display double/triple bonds on proteins or XML custom bonds)
+- "c": cartoon (works for protein and DNA. Martini implementation for protein is still a work in progress)
+- "s": surface (EDTSurf and MSMS, QuickSES is a WIP)
+- "dxiso": iso-surface (based on opendx maps)
+- "sphere": sphere (mesh based, slower than hyperball)
+- "l": lines (higher quality when number of atoms is < 10000)
+- "hbond": hydrogen-bonds (animated dotted line computed based on shrodinger distance/angle thresholds: distance(H-Acceptor) = 2.8A | angle(Don-H-Acc) = 120 | angle(H-Acc-B) = 90)
+- "hbondtubes": hydrogen-bonds tubes (still tube meshes between atoms, same as hbonds)
+- "fl": fieldlines (based on opendx maps and its gradient)
+- "trace": trace (alpha carbon trace)
+- "sugarribbons": sugar representation (WIP)
+- "sheherasade": sheherasade representation (WIP, [these Loic Nolin](http://www.theses.fr/2010REIMS008))
+- "ellipsoid": ellipsoid (using slow hyperball shader)
+- "p": points (fast 2D representation)
+
 -----------
 
 ### Python console
