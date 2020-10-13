@@ -27,8 +27,6 @@ Use the left arrow to hide all the selection buttons of this molecule.
 
 #### Selection / Representation buttons
 
-![image](/https://github.com/nezix/nezix.github.io/raw/main/images/5d79856f57e1ba6040eaba4394f069ef_image.png)
-
 The selection button can be unfolded to show two input fields :
 
 - The first one is the name of the selection.
