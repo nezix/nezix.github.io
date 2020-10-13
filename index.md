@@ -1,7 +1,14 @@
 # Practical UnityMol tutorial
 
-## UnityMol 1.1.1 (Executables [here](https://sourceforge.net/projects/unitymol/files))
+## UnityMol Executables can be downloaded [here](https://sourceforge.net/projects/unitymol/files))
 
+UnityMol is a molecular viewer that can be used in a standard desktop context or in a VR context. For now, VR version is separated from the desktop but the same code base is used.
+
+UnityMol is also a molecular visualization platform to prototype and develop new molecular representations and custom interaction metaphores. It is developed mainly in C# in the Unity game engine.
+
+Molecular input files are currently: PDB/mmCIF/GRO/Mol2/XYZ/SDF and XTC for trajectory files, OpenDX for potential maps.
+
+This tutorial gives a short introduction to UnityMol 1.1.1 in the form of a simplified documentation / tutorial.
 
 -----------
 
