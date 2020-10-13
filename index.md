@@ -33,7 +33,7 @@ Use the left arrow to hide all the selection buttons of this molecule.
 The selection button can be unfolded to show two input fields :
 
 - The first one is the name of the selection.
-- The second one can be used to enter a selection query using the selection language (see [Selection language](MDAnalysisSelection))
+- The second one can be used to enter a selection query using the selection language (see [Selection language](MDAnalysis-selection-language))
 
 The (+) button allows to add representations to the corresponding selection.
 The (x) button deletes the selection and all the representations of this selection.
@@ -56,7 +56,7 @@ By clicking on the selection label, the menu unfolds and you can tweak the diffe
 
 To make the python console appear (or disappear), you have to use the ```CTRL + <space bar>``` key combo or use the top left arrow.
 
-To use it see [Python Console](pythonconsole)
+To use it see [Python Console](Python-Console)
 
 - **Every action done with UI buttons correspond to a function or a set of functions of APIPython**
 - **There is a LOT of options that can be done in the console but are not possible from the UI**
@@ -339,7 +339,9 @@ unloadCustomBonds("structureName", modelId)
 
 After loading a topology from a PSF/TOP/XML file, you can restore the bonds computed by UnityMol at load time by doing:
 
-```restoreBonds("structureName")```
+```python
+restoreBonds("structureName")
+```
 
 -----------
 
@@ -347,9 +349,7 @@ After loading a topology from a PSF/TOP/XML file, you can restore the bonds comp
 
 When loading a protein with ```load()``` or ```fetch()``` the default behaviour is to use the secondary structure information from the file and use DSSP algorithm when there is none. You can force DSSP to be run: ```fetch("1kx2", forceDSSP=True)```.
 
-You can run DSSP on a loaded molecule by doing:
-
-```switchSSAssignmentMethod("structureName", forceDSSP=True)```
+You can run DSSP on a loaded molecule by doing: ```switchSSAssignmentMethod("structureName", forceDSSP=True)```.
 
 
 ### Annotations
@@ -391,7 +391,7 @@ It uses the AMBER forcefield to interactively compute the potential energy of th
 
 ### Export to OBJ/FBX
 
-One can export the current representations of a structure using one of these functions: ``exportRepsToOBJFile("structureName", "outputpath.obj")``` or ```exportRepsToFBXFile("structureName", "outputpath.fbx")```.
+One can export the current representations of a structure using one of these functions: ```exportRepsToOBJFile("structureName", "outputpath.obj")``` or ```exportRepsToFBXFile("structureName", "outputpath.fbx")```.
 
 - Note that this currently ignores point, hbond and bond-order representations.
 - For hyperball representations, a custom algorithm extracts a mesh based on current hyperball parameters, this can lead to a mesh slightly different from the actual representations in UnityMol. It also produces large meshes.
