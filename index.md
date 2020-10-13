@@ -10,16 +10,16 @@ Molecular input files are currently: PDB/mmCIF/GRO/Mol2/XYZ/SDF and XTC for traj
 
 This tutorial gives a short introduction to UnityMol 1.1.1 in the form of a simplified documentation / tutorial.
 
-<img src="https://sourceforge.net/p/unitymol/screenshot/UmolImg_2.png" width="100"/>
-<img src="https://sourceforge.net/p/unitymol/screenshot/UmolImg_9.png" width="100"/>
-<img src="https://pbs.twimg.com/media/EW3BoQGWAAA0jUT.jpg" width="100"/>
-<img src="https://pbs.twimg.com/media/EhkMVmRWsAMOUJJ.jpg" width="100"/>
-<img src="https://pbs.twimg.com/media/EMfKm6bXYAMduui.jpg" width="100"/>
-<img src="https://pbs.twimg.com/media/EbSWu1EXsAMToUm.jpg" width="100"/>
-<img src="https://pbs.twimg.com/media/EZGN2xxWoAAKhqe.jpg" width="100"/>
-<img src="https://pbs.twimg.com/media/D91StghW4AAMsO2.jpg" width="100"/>
-<img src="https://pbs.twimg.com/media/EQbrmHYWAAEherq.jpg" width="100"/>
-<img src="https://pbs.twimg.com/media/EOQfCdwW4AUVO40?jpg" width="100"/>
+<img src="https://sourceforge.net/p/unitymol/screenshot/UmolImg_2.png" width="200"/>
+<img src="https://sourceforge.net/p/unitymol/screenshot/UmolImg_9.png" width="200"/>
+<img src="https://pbs.twimg.com/media/EW3BoQGWAAA0jUT.jpg" width="200"/>
+<img src="https://pbs.twimg.com/media/EhkMVmRWsAMOUJJ.jpg" width="200"/>
+<img src="https://pbs.twimg.com/media/EMfKm6bXYAMduui.jpg" width="200"/>
+<img src="https://pbs.twimg.com/media/EbSWu1EXsAMToUm.jpg" width="200"/>
+<img src="https://pbs.twimg.com/media/EZGN2xxWoAAKhqe.jpg" width="200"/>
+<img src="https://pbs.twimg.com/media/D91StghW4AAMsO2.jpg" width="200"/>
+<img src="https://pbs.twimg.com/media/EQbrmHYWAAEherq.jpg" width="200"/>
+<img src="https://pbs.twimg.com/media/EOQfCdwW4AUVO40.jpg" width="200"/>
 
 -----------
 
@@ -286,6 +286,7 @@ Note that smoothing and averaging should be fast because it's done using C# Burs
 Currently, UnityMol has 3 effects you can activate in desktop mode:
 
 - Depth cueing / Fog : <img src="https://github.com/nezix/nezix.github.io/raw/main/images/6a67c18a3a1395360ba9f5cfdb9deb6b_image.png" width="350"/>
+
 Related functions are 
 ```python
 enableDepthCueing()
@@ -295,6 +296,7 @@ setDepthCueingDensity(0.1)
 ```
 
 - Depth of field / Bokeh effect: <img src="https://github.com/nezix/nezix.github.io/raw/main/images/12e17fffadf4d33efb8306d33e37d586_image.png" width="350"/>
+
 Related functions are 
 ```python
 enableDOF()
@@ -306,6 +308,7 @@ setDOFFocusDistance(0.1)
 
 **Note: when the DOF effect is activated, clicking on a molecule does not trigger the selection but changes the DOF focus distance.**
 - Outline :  <img src="https://github.com/nezix/nezix.github.io/raw/main/images/2a14a6cbbb8033e32d256c4e56c573e6_image.png" width="350"/>
+
 Related functions are
 ```python
 enableOutline()
