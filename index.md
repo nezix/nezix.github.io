@@ -186,6 +186,19 @@ You should have something close to this: <img src="https://github.com/nezix/nezi
 
 For a better overview of all the possibilities of the selection language please see [here](MDAnalysis selection language) and [here](https://userguide.mdanalysis.org/1.0.0/selections.html).
 
+##### Select in range
+
+To select atoms around 5.0 Angstrom of the water molecule of 1BL8 type:
+```python
+select("not water and within 5.0 resname HOH", "closeToWat")
+showSelection("closeToWat", "l")#show this selection as lines
+```
+
+You can now re-use this selection to create new selections:
+```python
+select("not closeToWat", "AllButCloseToWat")
+```
+
 #### Saving command history
 
 To save the current selections and representations to be able to share it or reload the commands you can click on the "Utils" -> "Save script" button. This will save all the commands that we executed, using the UI or the console. Some optimization work can be done to clear unnecessary commands by editing this file by hand.
