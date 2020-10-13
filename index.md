@@ -382,7 +382,7 @@ By default, UnityMol uses the last loaded molecule when clicking on IMD connect 
 
 During IMD, you can grab an atom or several atoms by click & dragging the mouse in desktop or the controller in VR.
 
-The IMD protocol is implemented using [MDDriver](https://github.com/LBT-CNRS/MDDriver) since UnityMol 1.1.1.
+The IMD protocol is implemented using [MDDriver](https://github.com/LBT-CNRS/MDDriver) since UnityMol 1.1.2.
 
 ### Docking mode
 

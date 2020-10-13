@@ -1,27 +1,26 @@
 # Docking mode
 
-### UnityMol 1.36
 
 This page presents the implementation of the docking mode for UnityMol, developed by João Rodriguez and Xavier Martinez mostly at Stanford University.
 
-The docking mode is designed to work in VR (although it can be activated in desktop mode).
+The docking mode is designed to work in VR (although it could be activated in desktop mode).
 
 ## Docking Mode details
 
 The code behind the docking mode uses the AMBER force field and is designed to work for proteins. A separated thread computes the potential energy of the system, UnityMol displays the last computed energy value.
-The code is in C++ (not yet multi-threaded) but there is a C# implementation in case the C++ shared library is not found or does not exist for your platform.
+The code is in C++ (not yet multi-threaded) but there is a C# implementation in case the C++ shared library (OptimizedNBEnergyCalculation.dll/so/bundle) is not found or does not exist for your platform.
 
 You can find workarounds to make simple ligand molecules work (change atom names to match AMBER nomenclature) but this would be a coarse energy approximation.
 
 Scale both VdW and electrostatic terms to reduce the impact of one term on the displayed energy by using the UI fields :
-![image](uploads/cab62d14ae1bc86a83962b06e1a78307/image.png)
+![image](images/cab62d14ae1bc86a83962b06e1a78307_image.png)
 
 By default, all loaded structures take part of the docking. Structures can be ignored if you set the flag ```mystructure.ignoreDocking = True```.
 
 ## How to activate
 
 - Using the UI :
-![image](uploads/ec64f350a4d5586d8346937366dec833/image.png)
+![image](images/ec64f350a4d5586d8346937366dec833_image.png)
 
 - Using the command line : 
 ```python
@@ -40,11 +39,19 @@ Note that it is still quite hard to slightly move molecules without having a lar
 
 The default behavior of the docking mode makes molecules react when you bump them with another molecule. Using the freeze button, you fix the molecules so that when you collide with them, they will not move.
 
+### Custom colliders
+
+Recently (UnityMol 1.1.1), you can create colliders for the docking mode based on atom types or atom names.
+
+### Custom terms
+
+A scaling factor for the VDW term and the electrostatic term can be set from the UI. That is useful if you want to discard one term or make it less prevalent with your system.
+
 ## Save docking conformation
 
 You can save the current docking conformation in a PDB file by using the command :
 ```python
-saveDockingState("path/dockingState1.pdb")
+saveDockingState("/path/to/dockingState1.pdb")
 ```
 Clicking on the UI menu will save the current docking state in a PDB file named "Unitymol_dock_N.pdb" where N is the number of existing files starting with "Unitymol_dock_" in "current_user_desktop/UnityMolDocking/".
 
