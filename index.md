@@ -1,12 +1,12 @@
 # Practical UnityMol tutorial
 
-## UnityMol Executables can be downloaded [here](https://sourceforge.net/projects/unitymol/files))
+## UnityMol Executables can be downloaded [here](https://sourceforge.net/projects/unitymol/files)
 
-UnityMol is a molecular viewer that can be used in a standard desktop context or in a VR context. For now, VR version is separated from the desktop but the same code base is used.
+UnityMol is a molecular viewer that can be used in a standard desktop context or in a Virtual Reality (VR) context. For now, there are one executable for the VR version and one for the desktop version but the same code base is used.
 
 UnityMol is also a molecular visualization platform to prototype and develop new molecular representations and custom interaction metaphores. It is developed mainly in C# in the Unity game engine.
 
-Molecular input files are currently: PDB/mmCIF/GRO/Mol2/XYZ/SDF and XTC for trajectory files, OpenDX for potential maps.
+Molecular input files currently supported are: PDB/mmCIF/GRO/Mol2/XYZ/SDF and XTC for trajectory files, OpenDX for potential maps.
 
 This tutorial gives a short introduction to UnityMol 1.1.1 in the form of a simplified documentation / tutorial.
 
@@ -24,6 +24,7 @@ This tutorial gives a short introduction to UnityMol 1.1.1 in the form of a simp
 -----------
 
 ### Interface
+
 UnityMol is currently based on one window menu with retractable sub-menus:
 <img src="https://github.com/nezix/nezix.github.io/raw/main/images/81bc4934b2d5dcf9adf3a83b689ccdd7_image.png" width="200"/>
 
@@ -31,7 +32,7 @@ The top right button with an arrow hides the whole menu.
 
 #### Loaded molecule buttons
 
-When loading a molecule, several selections and representations will be created by default (showDefaultRep flag of the load and fetch API functions):
+When loading a molecule, several selections and representations will be created by default (if the showDefaultRep flag is on for the load and fetch API functions):
 <img src="https://github.com/nezix/nezix.github.io/raw/main/images/5fb9bb009139de78cea290acdbab1812_image.png" width="200"/>
 
 Each loaded molecule will have this line : <img src="https://github.com/nezix/nezix.github.io/raw/main/images/e39b45cf9d9a6448cbd6e29c3ce8cd48_image.png" width="300"/>
