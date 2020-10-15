@@ -8,7 +8,7 @@ UnityMol is also a molecular visualization platform to prototype and develop new
 
 Molecular input files currently supported are: PDB/mmCIF/GRO/Mol2/XYZ/SDF and XTC for trajectory files, OpenDX for potential maps.
 
-This tutorial gives a short introduction to UnityMol 1.1.1 in the form of a simplified documentation / tutorial.
+This tutorial gives a short introduction to UnityMol 1.1.2 in the form of a simplified documentation / tutorial.
 
 <img src="https://sourceforge.net/p/unitymol/screenshot/UmolImg_2.png" width="200"/>
 <img src="https://sourceforge.net/p/unitymol/screenshot/UmolImg_9.png" width="200"/>
@@ -68,21 +68,21 @@ By clicking on the selection label, the menu unfolds and you can tweak the diffe
 
 Here is a list of representations available in UnityMol:
 
-- 'hb': hyperball (licorice/balls&sticks/VDW/smooth)
-- "bondorder": bondorder (based on hyperball and uses bond order information to display double/triple bonds on proteins or XML custom bonds)
-- "c": cartoon (works for protein and DNA. Martini implementation for protein is still a work in progress)
-- "s": surface (EDTSurf and MSMS, QuickSES is a WIP)
-- "dxiso": iso-surface (based on opendx maps)
-- "sphere": sphere (mesh based, slower than hyperball)
-- "l": lines (higher quality when number of atoms is < 10000)
-- "hbond": hydrogen-bonds (animated dotted line computed based on shrodinger distance/angle thresholds: distance(H-Acceptor) = 2.8A  /  angle(Don-H-Acc) = 120  /  angle(H-Acc-B) = 90)
-- "hbondtubes": hydrogen-bonds tubes (still tube meshes between atoms, same as hbonds)
-- "fl": fieldlines (based on opendx maps and its gradient)
-- "trace": trace (alpha carbon trace)
-- "sugarribbons": sugar representation (WIP)
-- "sheherasade": sheherasade representation (WIP, [these Loic Nolin](http://www.theses.fr/2010REIMS008))
-- "ellipsoid": ellipsoid (using slow hyperball shader)
-- "p": points (fast 2D representation)
+- **"hb"**: hyperball (licorice/balls&sticks/VDW/smooth)
+- **"bondorder"**: bondorder (based on hyperball and uses bond order information to display double/triple bonds on proteins or XML custom bonds)
+- **"c"**: cartoon (works for protein and DNA. Martini implementation for protein is still a work in progress)
+- **"s"**: surface (EDTSurf and MSMS, QuickSES is a WIP)
+- **"dxiso"**: iso-surface (based on opendx maps)
+- **"sphere"**: sphere (mesh based, slower than hyperball)
+- **"l"**: lines (higher quality when number of atoms is < 10000)
+- **"hbond"**: hydrogen-bonds (animated dotted line computed based on shrodinger distance/angle thresholds: distance(H-Acceptor) = 2.8A  /  angle(Don-H-Acc) = 120  /  angle(H-Acc-B) = 90)
+- **"hbondtubes"**: hydrogen-bonds tubes (still tube meshes between atoms, same as hbonds)
+- **"fl"**: fieldlines (based on opendx maps and its gradient)
+- **"trace"**: trace (alpha carbon trace)
+- **"sugarribbons"**: sugar representation (WIP)
+- **"sheherasade"**: sheherasade representation (WIP, [these Loic Nolin](http://www.theses.fr/2010REIMS008))
+- **"ellipsoid"**: ellipsoid (using slow hyperball shader)
+- **"p"**: points (fast 2D representation)
 
 -----------
 
