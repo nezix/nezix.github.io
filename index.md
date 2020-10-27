@@ -408,10 +408,10 @@ There are several types of annotation in UnityMol to add labels, objects, lines,
 To add a transparent sphere around an atom: ```annotateAtom("structureName", atomId)```
 To add a transparent sphere not attached to an atom, use ```annotateSphere(worldP=Vector3(0,0,0), scale=1.0)```
 
-You can also add some label to an atom: ```annotateAtomText("structureName", atomId, "My text")```, or not attached to an atom: ```annotateWorldText(worldPosition, scale=1.0, "My text", Color.white)```.
-To add text in 2D, you can use ```annotate2DText(screenP=Vector2(0.5, 0.5), scale=1.0, "My text", Color.white)``` where the screen position is defined by (0,0) = bottom-left and (1,1) = top-right.
+You can also add some label to an atom: ```annotateAtomText("structureName", atomId, "My text")```, or not attached to an atom: ```annotateWorldText(Vector3(0,0,0), 1.0, "My text", Color.white)```.
+To add text in 2D, you can use ```annotate2DText(screenP=Vector2(0.5, 0.5), scale=1.0, text="My text", textCol=Color.white)``` where the screen position is defined by (0,0) = bottom-left and (1,1) = top-right.
 
-To add a line: ```annotateLin("structureName", atomId, "structureName2", atomId2)``` and not attached to an atom: ```annotateWorldLine(p1=Vector3(0,0,0), p2=Vector3(3,0,0), sizeLine=1.0, Color.white)```.
+To add a line: ```annotateLine("structureName", atomId, "structureName2", atomId2)``` and not attached to an atom: ```annotateWorldLine(Vector3(0,0,0), Vector3(3,0,0), 1.0, Color.white)```.
 
 #### Measurements
 
